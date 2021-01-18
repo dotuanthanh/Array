@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let Upper='QWERTYUIOASDFGHJKLZCVBNM'
+    let Lower='qwwertyuiopasdfghjklzxcvbnm'
+    let x=prompt()
+     var result =[]
+    for(let i=0;i<x.length;i++){
+        if(Upper.indexOf(x[i])!==-1){
+            result.push(x[i].toLowerCase())
+        }
+        else if(Lower.indexOf(x[i])!=-1){
+            result.push(x[i].toUpperCase())
+        }
+        else{
+            result.push(x[i])
+        }
+    }
+
+    alert(result.join(""))
+
+</script>

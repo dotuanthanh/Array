@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input name="input" id="input" >
+<input type="button" onclick="add()" value="add" id="add">
+<input type="button" onclick="display()" value="display" id="display">
+<p id="display2">
+</p>
+
+</body>
+</html>
+<!--<script>-->
+<!--    var myColor = ["Red", "Green", "White", "Black"];-->
+<!--    myColor.toString()-->
+<!--    alert(myColor)-->
+<!--    -->
+<!--</script>-->
+<script>
+    var array = []
+     var i=0
+    function add() {
+     array[i++]=parseInt(document.getElementById('input').value)
+
+    }
+
+    function display() {
+        for (let i = 0; i < array.length; i++) {
+
+            document.getElementById("display2").innerHTML += "Element" + " " + i + " " + "is " + array[i] + "<br>"
+        }
+
+
+    }
+</script>
